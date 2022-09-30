@@ -1,0 +1,15 @@
+version: '3.10'
+
+services:
+  back:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sh ./docker/start_app.sh
+    volumes:
+      - ./:/code/
+    ports:
+      - "8000:8000"
+    container_name: shoplist-back
+    restart: always
+
