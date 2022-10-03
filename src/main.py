@@ -1,8 +1,4 @@
-from fastapi import FastAPI
-
-app = FastAPI()
+from src.core.factory import AppFactory
 
 
-@app.get('/')
-async def hello_world():
-    return {"message": "Hello World"}
+app = AppFactory.create_app()
