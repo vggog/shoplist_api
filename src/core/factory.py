@@ -15,7 +15,7 @@ class AppFactory:
 
     @classmethod
     def _register_views(cls, app: FastAPI):
-        from src.app.routes import shopping_list_route
+        from src.app.shopping_list.routes import shopping_list_route
 
         app.include_router(
             shopping_list_route,
