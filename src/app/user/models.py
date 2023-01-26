@@ -20,5 +20,5 @@ class UserModel(BaseModel):
         sa.String,
     )
     phone_number = sa.Column(
-        sa.Integer,
+        sa.String,
     )
