@@ -19,6 +19,11 @@ class Config:
         f'postgresql+psycopg2://{POSTGRES_USER_NAME}:{POSTGRES_USER_PASSWORD}'
         f'@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}'
     )
+    POSTGRES_DB_TEST: str = env('POSTGRES_DB_TEST')
+    DB_URL_TEST = str(
+        f'postgresql+psycopg2://{POSTGRES_USER_NAME}:{POSTGRES_USER_PASSWORD}'
+        f'@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB_TEST}'
+    )
 
     # Redis settings
     REDIS_HOST: str = env('REDIS_HOST')
