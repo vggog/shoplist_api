@@ -24,10 +24,14 @@ class RedisAdapter:
             decode_responses=self.redis_decode_response,
         )
 
-    def set_value(self, key: str, data: Any) -> None:
+    def set_value(self, key: str, data: Any, ex: int | None = None) -> None:
         with self._get_redis_client() as client:
-            client.set(name=key, value=data)
+            client.set(name=key, value=data, ex=ex)
 
     def get_value(self, key: str) -> Any:
         with self._get_redis_client() as client:
             return client.get(name=key)
+
+    def delete_value(self, key: str) -> None:
+        with self._get_redis_client() as client:
+            return client.delete(key)

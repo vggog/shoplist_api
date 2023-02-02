@@ -1,7 +1,7 @@
 import sqlalchemy as sa
 from sqlalchemy.orm import as_declarative
 
-from src.core.base.utils import get_current_datetime
+from src.core.utils import get_current_datetime
 
 
 @as_declarative()

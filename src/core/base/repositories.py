@@ -1,7 +1,7 @@
 from sqlalchemy import select
 
 from src.core.base.models import BaseModel
-from src.core.base.database import DBConnection
+from src.core.database import DBConnection
 
 
 class BaseRepository:

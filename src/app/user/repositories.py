@@ -2,7 +2,7 @@ from sqlalchemy.orm.session import Session
 
 from src.core.base.repositories import BaseRepository
 from src.app.user.models import UserModel
-from src.core.base.database import DBConnection
+from src.core.database import DBConnection
 from src.core.config import config
 
 

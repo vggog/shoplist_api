@@ -1,7 +1,7 @@
 import pytest
 
 from src.app.user.repositories import UserRepository
-from src.core.base.database import DBConnection
+from src.core.database import DBConnection
 from src.core.base.models import BaseModel
 from src.core.config import config
 
