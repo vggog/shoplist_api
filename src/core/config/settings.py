@@ -28,3 +28,11 @@ class Config:
     # Redis settings
     REDIS_HOST: str = env('REDIS_HOST')
     REDIS_PORT: int = env('REDIS_PORT')
+    DATA_RETENTION_TIME: int = 300
+
+    #SMTP
+    SMTP_LOGIN = env('SMTP_LOGIN')
+    SMTP_PASSWORD = env('SMTP_PASSWORD')
+    SMTP_HOST = env('SMTP_HOST')
+    SMTP_PORT = env('SMTP_PORT')
+
