@@ -17,6 +17,7 @@ redis = "^4.4.2"
 pytest = "^7.2.1"
 pytest-asyncio = "^0.20.3"
 Faker = "^16.6.1"
+Jinja2 = "^3.1.2"
 
 [tool.poetry.dev-dependencies]
 
